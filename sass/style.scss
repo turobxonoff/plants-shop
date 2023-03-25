@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none; border: none;
+    transition: all 0.3s linear;
+}
+
+body {
+    font-family: 'Work Sans';
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.header {
+    background-image: url('../images/home-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        background-color: #2D3949;
+        z-index: 1000;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .links {
+            a {
+                font-size: 2rem;
+                color: #fff;
+                padding-left: 5rem;
+            }
+            a:hover {
+                transition: all 0.3s linear;
+                color: aqua;
+            }
+        }
+    }
+    .home {
+        padding-top: 15rem;
+        h1 {
+            font-size: 6rem;
+            line-height: 1.2;
+            padding: 1rem 10rem 2rem;
+            color: #fff;
+            text-align: center;
+        }
+        p {
+            font-size: 2rem;
+            color: #fff;
+            text-transform: none;
+            padding: 0 30rem;
+            text-align: center;
+        }
+        .search {
+            background-color: #2D3949;
+            backdrop-filter: blur(10px);
+            border: 1px solid #fff;
+            border-radius: 3rem;
+            width: 50%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 4rem auto 40rem;
+            input {
+                background-color: transparent;
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+            .fa-search {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                background-color: aqua;
+                color: #fff;
+                font-size: 2rem;
+                padding-top: 1.2rem;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main {
+    .info {
+        margin: 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem;
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .shop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 17rem;
+        .content {
+            h1 {
+                font-size: 4rem;
+                padding-bottom: 2rem;
+            }
+            a {
+                font-size: 1.8rem;
+                color: #2D3949;
+                text-transform: none;
+            }
+        }
+        .plants-cards {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .plants-card {
+                background: #C1D0E4;
+                margin: 1rem;
+                border-radius: 2rem;
+                height: 30rem;
+                width: 20rem;
+                img {
+                    width: 20rem;
+                    position: absolute;
+                }
+                .img1, .img2, .img3 {
+                    top: -8rem;
+                }
+                .box {
+                    background-color: #fff;
+                    border-radius: 2rem;
+                    padding: 2rem;
+                    margin-top: 15rem;
+                    .flex {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    .fa-star {
+                        color: yellow;
+                        font-size: 1.2rem;
+                        margin: 1rem 0 4rem;
+                    }
+                    span {
+                        font-size: 2rem;
+                        color: #081323;
+                    }
+                    .fa-plus {
+                        margin-left: 5rem;
+                        font-size: 1.2rem;
+                        color: #fff;
+                        text-align: center;
+                        padding-top: 1rem;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+                    }
+                }
+            }
+        }
+    }
+    .plants {
+        margin: 5rem 0;
+        h1 {
+            text-align: center;
+            font-size: 4.5rem;
+            padding: 2rem 0;
+        }
+        p {
+            font-size: 1.8rem;
+            text-transform: none;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+        .images {
+            display: flex;
+            gap: 2rem;
+            .box {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                .img2 {
+                    margin-top: 4.6rem;
+                }
+            }
+        }
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        align-items: center;
+        gap: 2rem;
+        margin: 5rem 0;
+        .content {
+            h1 {
+                font-size: 5rem;
+                font-weight: 400;
+            }
+            span {
+                font-size: 1.8rem;
+                padding: 2rem 0;
+                display: block;
+                text-transform: none;
+                color: #2D3949;
+            }
+            .flex {
+                display: flex;
+                align-items: center;
+                margin: 2.5rem 0;
+                .text {
+                    padding-left: 2rem;
+                }
+                h2 {
+                    font-size: 2rem;
+                    padding-top: 1rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    text-transform: none;
+                    padding: 1.5rem 0;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(93.99deg, #566270 0.51%, #283444 100%);
+    padding: 4rem 0;
+    .contact {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        border-bottom: 1px solid #fff;
+        margin: 2rem 9%;
+        padding: 0;
+        padding-bottom: 3rem;
+        .box {
+            h1 {
+                font-size: 3rem;
+                color: #fff;
+            }
+            h2 {
+                font-size: 2rem;
+                color: #fff;
+            }
+            .search {
+                background-color: #2D3949;
+                backdrop-filter: blur(10px);
+                border: 1px solid #fff;
+                border-radius: 3rem;
+                width: 80%;
+                padding: 1rem 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+                margin-top: 2rem;
+                input {
+                    background-color: transparent;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    width: 90%;
+                }
+                button {
+                    background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+                    color: #fff;
+                    border-radius: 3rem;
+                    padding: 1rem;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background: #081323;
+                    transition: all 0.3s linear;
+                }
+            }
+            .links {
+                margin-top: 2rem;
+                p {
+                    font-size: 1.5rem;
+                    color: #fff;
+                    padding-top: 1rem;
+                }
+                a {
+                    display: block;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+                    &:hover {
+                        color: #009EFD;
+                    }
+                }
+            }
+        }
+        .box-4 {
+            width: 25%;
+        }
+    }
+    .credit {
+        p {
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            padding: 2rem 9%;
+        }
+    }
+}
+
+
+// Responsive web design
+@media (max-width: 990px) {
+    html {
+        font-size: 57%;
+    }
+    .header {
+        .home {
+            h1 {
+                padding: 2rem 0;
+            }
+            p {
+                padding: 0 10rem;
+            }
+        }
+    }
+    .main {
+        .shop {
+            gap: 3rem;
+        }
+        .plants {
+            .images {
+                .box {
+                    .img2 {
+                        margin-top: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 53%;
+    }
+    #menu-icon {
+        display: block;
+    }
+
+    .header {
+        height: 100vh;
+        .navbar {
+            .links {
+                a {
+                    text-align: center;
+                    padding-left: 0;
+                    display: block;
+                    margin: 4rem;
+                }
+                position: absolute;
+                top: -25rem; right: 2rem;
+                width: 30rem;
+                background-color: #2D3949;
+                transform-origin: top right;
+                transform: scale(0);
+                transition: none;
+                opacity: 0;
+            }
+            .links.active {
+                top: 8rem;
+                transform: scale(1);
+                opacity: 1;
+                transition: all 0.3s linear;
+            }
+        }
+        .home {
+            h1 {
+                padding: 2rem 0;
+            }
+
+            p {
+                padding: 0 10rem;
+            }
+        }
+    }
+    .main {
+        .shop {
+            flex-direction: column;
+            align-items: start;
+            margin-top: 10rem;
+            .content {
+                margin-bottom: 10rem;
+            }
+            .plants-cards {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14rem;
+                width: 100%;
+                height: 100%;
+                .plants-card {
+                    width: 100%;
+                    margin: 4rem 0;
+                    img {
+                        width: 25rem;
+                        margin-left: 5rem;
+                    }
+                    .img2 {
+                        top: 43rem;
+                    }
+                    .img3 {
+                        top: 95rem;
+                    }
+                }
+            }
+        }
+        .plants {
+            .images {
+                .box {
+                    .img2 {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .contact {
+            flex-direction: column;
+            .box {
+                margin-top: 3rem;
+            }
+            .box-4 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        .home {
+            h1 {
+                padding: 2rem 0;
+                font-size: 4rem;
+            }
+            p {
+                padding: 2rem 0;
+            }
+            .search {
+                width: 100%;
+            }
+        }
+    }
+    .main {
+        .plants {
+            .images {
+                flex-direction: column;
+            }
+        }
+    }
+}
